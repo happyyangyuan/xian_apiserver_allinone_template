@@ -4,7 +4,7 @@ http apiserver all-in-one demo repository based on xian.
 
 该代码模板非常适用于**前后端分离的JavaWeb全家桶应用**。
 
-## 构建和启动
+## 本地构建和启动
 ### 构建
 ```bash
 ./xian_runtime/demoApiApplication/build.sh
@@ -46,3 +46,9 @@ ctrl+c
     }
 ```
 
+## 持续集成
+### 使用rancher-pipeline进行持续集成
+详见`.rancher-pipeline.yml`和`rancher-deployment.yaml`文件配置
+
+## 快速开发指南
+[详见xian框架文档](https://github.com/xiancloud/xian/blob/master/doc/zh_CN/quickStart.md#%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8D%95%E5%85%83)
