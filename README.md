@@ -1,4 +1,4 @@
-# xian_apiserver全家桶
+# xian_apiserver
 http apiserver all-in-one demo repository based on xian.  
 基于xian框架的独立的全家桶java api服务端应用的代码模板。
 
