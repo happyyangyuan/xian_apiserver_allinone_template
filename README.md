@@ -1,8 +1,8 @@
 # xian_apiserver全家桶
 http apiserver all-in-one demo repository based on xian.  
-基于xian框架的独立的全家桶java api服务端应用的代码模板
+基于xian框架的独立的全家桶java api服务端应用的代码模板。
 
-基于apiserver我们可以实现前后端分离的Java web应用。
+该代码模板非常适用于**前后端分离的JavaWeb全家桶应用**。
 
 ## 构建和启动
 ### 构建
