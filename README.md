@@ -7,7 +7,7 @@ http apiserver all-in-one demo repository based on xian.
 ## 构建和启动
 ### 构建
 ```bash
-./demoApiApplication/build.sh
+./xian_runtime/demoApiApplication/build.sh
 ```
 该脚本执行了如下几步：
 - 清除历史构建内容
@@ -19,16 +19,16 @@ http apiserver all-in-one demo repository based on xian.
 前台启动
 ```bash
 # 启动
-./demoApiApplication/_start.sh
+./xian_runtime/demoApiApplication/_start.sh
 # 停止
 ctrl+c
 ```
 后台运行
 ```bash
 # 后台启动
-./demoApiApplication/start.sh
+./xian_runtime/demoApiApplication/start.sh
 # 后台停止
-./demoApiApplication/stop.sh
+./xian_runtime/demoApiApplication/stop.sh
 ```
 
 关于gradle构建输出fatjar，请参考这里：https://www.baeldung.com/gradle-fat-jar。
