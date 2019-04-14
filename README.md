@@ -10,7 +10,7 @@ http apiserver all-in-one demo repository based on xian.
 ![图图图](http://processon.com/chart_image/5cb35752e4b0b62750fa5f4e.png)
 
 ### 前后端分离部署架构
-![图图图](http://processon.com/chart_image/5cb35c0ee4b069ac5a269a2d.png?_=1555260993266)
+![图图图](http://processon.com/chart_image/5cb35c0ee4b069ac5a269a2d.png?_=1555261080590)
 ## 本地构建和启动
 ### 构建
 ```bash
