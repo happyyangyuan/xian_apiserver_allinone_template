@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    workload.user.cattle.io/workloadselector: deployment-projectname-${CICD_GIT_BRANCH}-apiserver
+  name: apiserver
+  namespace: projectname-${CICD_GIT_BRANCH}-apiserver
+spec:
+  #replicas: 1
+  selector:
+    matchLabels:
+      workload.user.cattle.io/workloadselector: deployment-projectname-${CICD_GIT_BRANCH}-apiserver
+  template:
+    metadata:
+      labels:
+        workload.user.cattle.io/workloadselector: deployment-projectname-${CICD_GIT_BRANCH}-apiserver
+    spec:
+      containers:
+      - args:
+        - _start.sh
+        command:
+        - /bin/bash
+        env:
+        - name: XIAN_ENV
+          value: ${CICD_GIT_BRANCH}
+        image: xiancloud/${CICD_GIT_REPO_NAME}:${CICD_GIT_BRANCH}-${CICD_EXECUTION_SEQUENCE}
+        imagePullPolicy: Always
+        name: apiserver
+        readinessProbe:
+          exec:
+            command:
+            - ./readyCheck.sh
+        resources:
+          limits:
+            # modify this limit in your production environment
+            memory: 200Mi
+        workingDir: /data/workspace/xian_runtime/demoApiApplication
+      imagePullSecrets:
+      - name: xiancloud

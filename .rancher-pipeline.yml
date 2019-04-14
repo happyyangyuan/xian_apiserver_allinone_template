@@ -1,0 +1,21 @@
+stages:
+- name: 编译
+  steps:
+  - runScriptConfig:
+      image: xiancloud/gradle
+      shellScript: ./xian_runtime/buildAll.sh
+- name: 镜像
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: xiancloud/${CICD_GIT_REPO_NAME}:${CICD_GIT_BRANCH}-${CICD_EXECUTION_SEQUENCE}
+      pushRemote: true
+      registry: index.docker.io
+- name: 发布
+  steps:
+  - applyYamlConfig:
+      path: ./xian_runtime/demoGateway/rancher-deployment.yaml
+  - applyYamlConfig:
+      path: ./xian_runtime/apidocApplication/rancher-deployment.yaml
+timeout: 60

@@ -1,0 +1,12 @@
+dependencies {
+    runtime "info.xiancloud:xian-apidoc:$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-gateway', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-nettyhttpserver', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-ruleengine', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-apifestOauth20', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-apifestOauth20Api', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-core', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-log4j2', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-gelf-common', version: "$xianVersion"
+    runtime group: 'info.xiancloud', name: 'xian-httpclient', version: "$xianVersion"
+}
