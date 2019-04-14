@@ -33,12 +33,9 @@ ctrl+c
 
 关于gradle构建输出fatjar，请参考这里：https://www.baeldung.com/gradle-fat-jar。
 ```groovy
-    //create a single Jar with all dependencies
     task fatJar(type: Jar) {
         manifest {
-            attributes 'Implementation-Title': 'Gradle Jar File Example',
-                    'Implementation-Version': version,
-                    'Main-Class': 'info.xiancloud.core.init.start.StartServer'
+            attributes 'Main-Class': 'info.xiancloud.core.init.start.StartServer'
         }
         baseName = project.name + '-all'
         from { configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) } }
