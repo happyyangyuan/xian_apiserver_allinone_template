@@ -59,6 +59,8 @@ ctrl+c
     2.1. 执行上述构建命令`build.sh`
     2.2. 然后在本地运行`_start.sh`
     2.3. 访问http://localhost:9123 查看效果
+    2.4. 访问demoUnit01接口：http://localhost:9123/demoGroup01/demoUnit01
+    2.5. 访问demoUnit02接口：http://localhost:9123/demoGroup02/demoUnit02
 3. 可以直接将整个`xian_runtime`包复制到服务器上去运行`_start.sh`/`start.sh`。注意服务器上必须安装了jre8。
 
 [详见xian框架文档](https://github.com/xiancloud/xian/blob/master/doc/zh_CN/quickStart.md#%E7%BC%96%E5%86%99%E4%B8%80%E4%B8%AA%E5%BE%AE%E6%9C%8D%E5%8A%A1%E5%8D%95%E5%85%83)
