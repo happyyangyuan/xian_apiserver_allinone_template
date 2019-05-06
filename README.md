@@ -6,6 +6,7 @@
 ## 本地构建和启动
 ### 构建
 ```bash
+# 本bash脚本只可以在Mac和Linux系统上运行，如果您是window系统，请直接将bash脚本内的gradle命令取出来单独执行
 ./xian_runtime/demoApiApplication/build.sh
 ```
 该脚本执行了如下几步：
