@@ -17,16 +17,16 @@
 ### 启动
 前台启动
 ```bash
-# 启动
+# 启动（本bash脚本只可以在Mac和Linux系统上运行，如果您是window系统，请直接将bash脚本内的java命令取出来单独执行）
 ./xian_runtime/demoApiApplication/_start.sh
 # 停止
 ctrl+c
 ```
 后台运行
 ```bash
-# 后台启动
+# 后台启动（本bash脚本只可以在Mac和Linux系统上运行，如果您是window系统，请直接将bash脚本内的java命令取出来单独执行）
 ./xian_runtime/demoApiApplication/start.sh
-# 后台停止
+# 后台停止（本bash脚本只可以在Mac和Linux系统上运行，如果您是window系统，请直接将bash脚本内的java命令取出来单独执行）
 ./xian_runtime/demoApiApplication/stop.sh
 ```
 
@@ -48,8 +48,8 @@ ctrl+c
     2. 修改src/main/java/内包路径名称`com.yourcompany.demoplugin01`等为你想要的包路径名称。
     3. 开发你的group和unit代码
 2. 构建和运行
-    1. 执行上述构建命令`build.sh`
-    2. 然后在本地运行`_start.sh`
+    1. 执行上述构建命令`build.sh`（本bash脚本只可以在Mac和Linux系统上运行，如果您是window系统，请直接将bash脚本内的java命令取出来单独执行）
+    2. 然后在本地运行`_start.sh`（本bash脚本只可以在Mac和Linux系统上运行，如果您是window系统，请直接将bash脚本内的java命令取出来单独执行）
     3. 访问http://localhost:9123 查看效果
     4. 访问demoUnit01接口：http://localhost:9123/demoGroup01/demoUnit01
     5. 访问demoUnit02接口：http://localhost:9123/demoGroup02/demoUnit02
