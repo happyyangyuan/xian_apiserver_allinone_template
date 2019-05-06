@@ -1,16 +1,8 @@
 # xian_apiserver
-http apiserver all-in-one demo repository based on xian.  
-基于xian框架的独立的全家桶java api服务端应用的代码模板。
+本代码库是一个基于xian框架的独立的全家桶javaApi服务端应用的代码模板。
 
 该代码模板非常适用于**前后端分离的JavaWeb全家桶应用**，详见与之配合的[前端模板代码](https://github.com/happyyangyuan/xian_static_website_template)
 
-## 架构设计
-前后端分离，后端为纯API服务能力，不提供静态资源。
-### apiserver应用架构图
-![图图图](http://processon.com/chart_image/5cb35752e4b0b62750fa5f4e.png)
-
-### 前后端分离部署架构
-![图图图](http://processon.com/chart_image/5cb35c0ee4b069ac5a269a2d.png?_=1555261080590)
 ## 本地构建和启动
 ### 构建
 ```bash
@@ -72,3 +64,12 @@ ctrl+c
 
 #### 使用jenkins进行持续集成
 步骤同上述快速开发指南第3步。
+
+## 架构设计
+前后端分离，后端为纯API服务能力，不提供静态资源。
+### apiserver应用架构图
+![图图图](http://processon.com/chart_image/5cb35752e4b0b62750fa5f4e.png)
+
+### 前后端分离部署架构
+![图图图](http://processon.com/chart_image/5cb35c0ee4b069ac5a269a2d.png?_=1555261080590)
+
